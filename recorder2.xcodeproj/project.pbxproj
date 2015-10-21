@@ -174,6 +174,7 @@
 				146A7C4C1BAE856B003A52DB /* Frameworks */,
 				146A7C4D1BAE856B003A52DB /* Resources */,
 				55B6E91B510D82968DDD885D /* Copy Pods Resources */,
+				3212DDCD9C3CE2EA1BA8F8A5 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,6 +299,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3212DDCD9C3CE2EA1BA8F8A5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		55B6E91B510D82968DDD885D /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,6 +496,8 @@
 			baseConfigurationReference = E5521B11A3392996D96AD08C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = recorder2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
@@ -491,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tachibanakikaku.com.recorder2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 			};
 			name = Debug;
@@ -500,6 +519,8 @@
 			baseConfigurationReference = E1D2B8D5C0471A6ED0E15FC7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = recorder2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
@@ -511,6 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tachibanakikaku.com.recorder2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 			};
 			name = Release;

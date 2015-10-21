@@ -42,8 +42,12 @@ class FirstViewController: UIViewController, ESTBeaconManagerDelegate {
     let placesByBeacons = [
         "6342:23998": [
             "Mint Cocktail": 10,
-            "Green & Green Salads": 150,
-            "Mini Panini": 325
+        ],
+        "27175:42835": [
+            "Dark Purple": 999
+        ],
+        "31166:952": [
+            "Icy Marshmallow": 999
         ]
     ]
     
